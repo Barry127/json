@@ -1,5 +1,5 @@
 {
-  "name": "json",
+  "name": "@b127/json",
   "version": "0.1.0",
   "description": "Read and write JSON files",
   "keywords": [
