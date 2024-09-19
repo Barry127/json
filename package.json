@@ -1,0 +1,38 @@
+{
+  "name": "json",
+  "version": "0.1.0",
+  "description": "Read and write JSON files",
+  "keywords": [
+    "JSON"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barry127/json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Barry127/json/issues"
+  },
+  "author": "Barry de Kleijn <kleijn.barry@gmail.com>",
+  "type": "module",
+  "exports": {
+    "default": "./dist/index.js",
+    "types": "./dist/index.d.ts"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "clear": "rimraf dist",
+    "build": "npm run clear && tsc",
+    "prepare": "npm run test && npm run build",
+    "test": "tsc --noEmit && vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
